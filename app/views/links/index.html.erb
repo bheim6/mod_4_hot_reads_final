@@ -1,0 +1,13 @@
+<h1>The Hottest Reads You Ain't Neva Seen!</h1>
+<button id="see_reads">See the Hot Reads</button>
+<p>
+  <div id="hot_reads">
+    <ol>
+      <% @links.each do |link| %>
+      <li>
+        <%= link_to link.title, link.url %>
+      </li>
+     <% end %>
+    </ol>
+  </div>
+</p>
